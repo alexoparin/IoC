@@ -40,7 +40,7 @@
     <Compile Include="Implementation\InstanceManager.cs" />
     <Compile Include="Implementation\ResolveContext.cs" />
     <Compile Include="Implementation\TypeResolutionInfo.cs" />
-    <Compile Include="Infrastructure\DependencyAttribute.cs" />
+    <Compile Include="Infrastructure\InjectAttribute.cs" />
     <Compile Include="Infrastructure\IContainer.cs" />
     <Compile Include="Infrastructure\IResolveContext.cs" />
     <Compile Include="Infrastructure\IResolveOverrides.cs" />
