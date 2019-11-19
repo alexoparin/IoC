@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0A58E619-2902-4563-B9C1-5A2E194DEE96}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AMO.IoC</RootNamespace>
+    <AssemblyName>AMO.IoC</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Extensions\RegistryExtensions.cs" />
+    <Compile Include="Extensions\ResolverExtensions.cs" />
+    <Compile Include="Implementation\Container.cs" />
+    <Compile Include="Implementation\DependencyInfo`.cs" />
+    <Compile Include="Implementation\DependencyTypes.cs" />
+    <Compile Include="Implementation\IInstanceManager.cs" />
+    <Compile Include="Implementation\InstanceManager.cs" />
+    <Compile Include="Implementation\ResolveContext.cs" />
+    <Compile Include="Implementation\TypeResolutionInfo.cs" />
+    <Compile Include="Infrastructure\DependencyAttribute.cs" />
+    <Compile Include="Infrastructure\IContainer.cs" />
+    <Compile Include="Infrastructure\IResolveContext.cs" />
+    <Compile Include="Infrastructure\IResolveOverrides.cs" />
+    <Compile Include="Implementation\RegistrationKey.cs" />
+    <Compile Include="Infrastructure\InstanceManagement.cs" />
+    <Compile Include="Infrastructure\IRegistry.cs" />
+    <Compile Include="Infrastructure\IResolver.cs" />
+    <Compile Include="IoCProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
